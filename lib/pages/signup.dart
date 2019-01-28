@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './start.dart';
 
 class SignupPage extends StatefulWidget {
  @override
@@ -72,14 +73,12 @@ class _SignupPageState extends State<SignupPage> {
               style: TextStyle(
                 fontFamily: 'Roboto-Bold', fontSize: 16.0),
              ),
-             onPressed: () {
-              //Navigator.push(context, MaterialPageRoute(
-              //builder: () =>
-               // VerifyPage()
-              //)
-             //);
-             },
-             color: Theme.of(context).primaryColor,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => StartPage()
+            ));
+                }
+             , color: Theme.of(context).primaryColor,
              textColor: Colors.white,
             ),
            ],
